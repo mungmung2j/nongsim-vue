@@ -1,11 +1,13 @@
 <template>
   <Header></Header>
+  <Popup></Popup>
   <Main></Main>
 </template>
 
 <script setup>
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
+import Popup from './components/Popup.vue';
 </script>
 
 <style lang="scss">
