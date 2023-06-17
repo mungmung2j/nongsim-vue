@@ -87,9 +87,6 @@
   color:#666666;
 }
 
-.mainProduct{
-  margin:140px 100px;
-}
 
 .only{
   display:grid;
