@@ -27,6 +27,10 @@
 </template>
 
 <style>
+.newZ{
+  max-width: 100%;
+}
+
 .secondSwiper .swiper-button-prev{
   display: block;
     position: absolute;
