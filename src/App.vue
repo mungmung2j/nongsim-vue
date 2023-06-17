@@ -2,6 +2,7 @@
   <Header></Header>
   <Popup></Popup>
   <SwiperBig></SwiperBig>
+  <Character></Character>
   <Main></Main>
 </template>
 
@@ -10,6 +11,7 @@ import Header from './components/Header.vue';
 import Main from './components/Main.vue';
 import Popup from './components/Popup.vue';
 import SwiperBig from './components/SwiperBig.vue';
+import Character from './components/Character.vue';
 </script>
 
 <style lang="scss">
