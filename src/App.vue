@@ -4,6 +4,10 @@
   <SwiperBig></SwiperBig>
   <Character></Character>
   <OnlyNongsim></OnlyNongsim>
+  <NongGGu></NongGGu>
+  <AI></AI>
+  <SwiperSmall></SwiperSmall>
+  <review></review>
   <Main></Main>
 </template>
 
@@ -14,6 +18,10 @@ import Popup from './components/Popup.vue';
 import SwiperBig from './components/SwiperBig.vue';
 import Character from './components/Character.vue';
 import OnlyNongsim from './components/OnlyNongsim.vue';
+import NongGGu from './components/NongGGu.vue';
+import AI from './components/AI.vue';
+import SwiperSmall from './components/SwiperSmall.vue';
+import review from './components/Review.vue';
 </script>
 
 <style lang="scss">
@@ -78,4 +86,7 @@ h2{
   cursor:pointer;
 }
 
+.mainProduct{
+  margin:140px 100px;
+}
 </style>
