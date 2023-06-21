@@ -43,7 +43,7 @@ h2{
 }
 
 /* button css */
-.whiteBtn{
+.plan{
   color:#999;
   font-size:16px;
   background: none;
@@ -55,7 +55,19 @@ h2{
   cursor: pointer;
 }
 
-.redBtn{
+.plan.red{
+  color:white;
+  font-size:16px;
+  background: #c7002e;
+  height: 42px;
+  line-height: 42px;
+  padding:0 40px;
+  border-radius: 22px;
+  border:1px solid #eaeaea;
+  cursor: pointer;
+}
+
+.goods{
   color:white;
   font-size:16px;
   background: #c7002e;
@@ -64,6 +76,19 @@ h2{
   padding:0 40px;
   border-radius: 22px;
   border:none;
+  margin-left: 10px;
+  cursor:pointer;
+}
+
+.goods.white{
+  color:#999;
+  font-size:16px;
+  background: none;
+  height: 42px;
+  line-height: 42px;
+  padding:0 40px;
+  border-radius: 22px;
+  border:1px solid #eaeaea;
   margin-left: 10px;
   cursor:pointer;
 }

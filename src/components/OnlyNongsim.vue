@@ -4,7 +4,7 @@
     <h2>오직 농심몰에서만!</h2>
       <div class="viewProduct"><p>농심몰 전용 제품 구경하고 가세요</p>
         <div>
-          <button class="whiteBtn">기획세트</button><button class="redBtn">굿즈세트</button>
+          <button class="plan">기획세트</button><button class="goods">굿즈세트</button>
         </div>
       </div>
       <div class="only">
@@ -16,7 +16,7 @@
             <p>#전용세트 #기획전</p><p>농심몰에서만 만나는 한정 & 굿즈 세트</p>
           </div>
         </div>
-        <div>
+        <div class="goodsitem">
           <div class="img">
             <img class="production" src="@/assets/noodle_honey.png" alt=""/>
             <div class="addCart"></div>
@@ -25,7 +25,7 @@
             <p>매콤달달 세트(배홍동쫄쫄면+꿀꽈배기)_12입</p><p>16,280원</p>
           </div>
         </div>
-        <div>
+        <div class="goodsitem">
           <div class="img">
             <img class="production" src="@/assets/gunNoodle.png" alt=""/>
             <div class="addCart"></div>
@@ -34,7 +34,7 @@
             <p>깔끔 건면 4종 세트_18입</p><p>19,690원</p>
           </div>
         </div>
-        <div>
+        <div class="goodsitem">
           <div class="img">
             <img class="production" src="@/assets/jjajangGun.png" alt=""/>
             <div class="addCart"></div>
@@ -43,7 +43,7 @@
             <p>짜왕건면+사천백짬뽕_16입</p><p>22,110원</p>
           </div>
         </div>
-        <div>
+        <div class="goodsitem">
           <div class="img">
             <img class="production" src="@/assets/chips.png" alt=""/>
             <div class="addCart"></div>
@@ -52,7 +52,7 @@
             <p>꿀옥양오(203g*1)</p><p>3,850원</p>
           </div>
         </div>
-        <div>
+        <div class="goodsitem">
           <div class="img"><img class="production" src="@/assets/baehong.png" alt=""/>
             <div class="addCart"></div>
           </div>
@@ -60,7 +60,7 @@
             <p>배홍동 메밀 세트(13입)</p><p>12,980원</p>
           </div>
         </div>
-        <div>
+        <div class="goodsitem">
           <div class="img">
             <img class="production" src="@/assets/kalNoodle.png" alt=""/>
             <div class="addCart"></div>
@@ -121,6 +121,10 @@
   background-image:url(@/assets/addCart.png);
   background-repeat: no-repeat;
 }
+
+.goodsitem.none{
+  display:none;
+}
 </style>
 
 <script setup>
@@ -133,14 +137,29 @@ onMounted(function(){
 
 for (let i = 0; i < border.length; i++) {
   border[i].addEventListener('mouseover', function(){
-    border[i].classList.add('over')
+    border[i].classList.add('over');
   })
 }
 
 for (let i=0; i<border.length; i++){
   border[i].addEventListener('mouseleave', function(){
-    border[i].classList.remove('over')
+    border[i].classList.remove('over');
   })
 }
+
+const plan=document.querySelector('.plan')
+const goods=document.querySelector('.goods')
+const goodsitem=document.querySelector('.goodsitem')
+
+plan.addEventListener('click', function(){
+  plan.classList.add('red');
+  goods.classList.add('white');
+  goodsitem.classList.add('none');
+})
+
+goods.addEventListener('click', function(){
+  plan.classList.remove('red');
+  goods.classList.remove('white');
+})
 })
 </script>
