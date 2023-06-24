@@ -7,7 +7,8 @@
   <NongGGu></NongGGu>
   <AI></AI>
   <SwiperSmall></SwiperSmall>
-  <review></review>
+  <Review></Review>
+  <Footer></Footer>
   <Main></Main>
 </template>
 
@@ -21,7 +22,8 @@ import OnlyNongsim from './components/OnlyNongsim.vue';
 import NongGGu from './components/NongGGu.vue';
 import AI from './components/AI.vue';
 import SwiperSmall from './components/SwiperSmall.vue';
-import review from './components/Review.vue';
+import Review from './components/Review.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <style lang="scss">
