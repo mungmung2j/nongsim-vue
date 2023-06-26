@@ -24,13 +24,13 @@
     </div>
     <div class="speech-bubble">
         <div class="lounge-box">
-          <a href="#">멤버십</a><a href="#">고객 서베이</a><a href="#">누들푸들</a><a href="#">체험단 리뷰</a>
+          <a class="lounge-membership" href="#">멤버십</a><a class="lounge-survey" href="#">고객 서베이</a><a class="lounge-poodle" href="#">누들푸들</a><a class="lounge-experience" href="#">체험단 리뷰</a>
         </div>
         <div class="event-box">
-          <a href="#">기획전</a><a href="#">이벤트</a><a href="#">쿠폰/상품권</a>
+          <a class="event-exhibition" href="#">기획전</a><a class="event-event" href="#">이벤트</a><a class="event-cupon" href="#">쿠폰/상품권</a>
         </div>
         <div class="subscribe-box">
-          <a href="#">백산수</a><a href="#">일반제품</a>
+          <a class="subscribe-backsan" href="#">백산수</a><a class="subscribe-normal" href="#">일반제품</a>
         </div>
       </div>
   </header>
@@ -161,6 +161,42 @@
   box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.1);
   border-radius: 20px;
 }
+
+.lounge-membership.over{
+  color:#c7000e;
+}
+
+.lounge-survey.over{
+  color:#c7000e;
+}
+
+.lounge-poodle.over{
+  color:#c7000e;
+}
+
+.lounge-experience.over{
+  color:#c7000e;
+}
+
+.event-exhibition.over{
+  color: #c7000e;
+}
+
+.event-event.over{
+  color:#c7000e;
+}
+
+.event-cupon.over{
+  color: #c7000e;
+}
+
+.subscribe-backsan.over{
+  color:#c7000e;
+}
+
+.subscribe-normal.over{
+  color:#c7000e;
+}
 </style>
 
 <script setup>
@@ -225,6 +261,91 @@ onMounted(function(){
 
   subscribeBox.addEventListener('mouseleave', function(){
     subscribeBox.classList.remove('over');
+  })
+
+
+  const membership=document.querySelector('.lounge-membership')
+  const survey=document.querySelector('.lounge-survey')
+  const poodle=document.querySelector('.lounge-poodle')
+  const experience=document.querySelector('.lounge-experience')
+  const exhibition=document.querySelector('.event-exhibition')
+  const even=document.querySelector('.event-event')
+  const cupon=document.querySelector('.event-cupon')
+  const backsan=document.querySelector('.subscribe-backsan')
+  const normal=document.querySelector('.subscribe-normal')
+
+
+  membership.addEventListener('mouseover', function(){
+    membership.classList.add('over');
+  })
+
+  survey.addEventListener('mouseover', function(){
+    survey.classList.add('over');
+  })
+
+  poodle.addEventListener('mouseover', function(){
+    poodle.classList.add('over');
+  })
+
+  experience.addEventListener('mouseover', function(){
+    experience.classList.add('over');
+  })
+
+  exhibition.addEventListener('mouseover', function(){
+    exhibition.classList.add('over');
+  })
+
+  even.addEventListener('mouseover', function(){
+    even.classList.add('over');
+  })
+
+  cupon.addEventListener('mouseover', function(){
+    cupon.classList.add('over');
+  })
+
+  backsan.addEventListener('mouseover', function(){
+    backsan.classList.add('over');
+  })
+
+  normal.addEventListener('mouseover', function(){
+    normal.classList.add('over');
+  })
+
+
+  membership.addEventListener('mouseleave', function(){
+    membership.classList.remove('over');
+  })
+
+  survey.addEventListener('mouseleave', function(){
+    survey.classList.remove('over');
+  })
+
+  poodle.addEventListener('mouseleave', function(){
+    poodle.classList.remove('over');
+  })
+
+  experience.addEventListener('mouseleave', function(){
+    experience.classList.remove('over');
+  })
+
+  exhibition.addEventListener('mouseleave', function(){
+    exhibition.classList.remove('over');
+  })
+
+  even.addEventListener('mouseleave', function(){
+    even.classList.remove('over');
+  })
+
+  cupon.addEventListener('mouseleave', function(){
+    cupon.classList.remove('over');
+  })
+
+  backsan.addEventListener('mouseleave', function(){
+    backsan.classList.remove('over');
+  })
+
+  normal.addEventListener('mouseleave', function(){
+    normal.classList.remove('over');
   })
 })
 </script>
