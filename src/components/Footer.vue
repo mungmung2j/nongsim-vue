@@ -3,7 +3,7 @@
     <div class="black-box">
       <div class="footer-top">
         <div class="footer-menu">
-          <span class="footer-menu-span">회사소개</span><span class="footer-menu-span">|</span><span class="footer-menu-span">이용약관</span><span class="footer-menu-span">|</span><span class="footer-menu-span white">개인정보처리방침</span><span class="footer-menu-span">|</span><span class="footer-menu-span">이용안내</span><span class="footer-menu-span">|</span><span class="footer-menu-span">고객만족센터</span><span class="footer-menu-span">|</span><span class="footer-menu-span white">임직원인증</span>
+          <a href="#" class="footer-menu-span">회사소개</a><span class="footer-menu-span">|</span><a href="#" class="footer-menu-span">이용약관</a><span class="footer-menu-span">|</span><a href="#" class="footer-menu-span white">개인정보처리방침</a><span class="footer-menu-span">|</span><a href="#" class="footer-menu-span">이용안내</a><span class="footer-menu-span">|</span><a href="#" class="footer-menu-span">고객만족센터</a><span class="footer-menu-span">|</span><a href="#" class="footer-menu-span white">임직원인증</a>
         </div>
         <select>
           <option value>FAMILLY SITE</option>
