@@ -8,6 +8,7 @@
     </ul>
     <div class="headerBody">
       <img class="category" src="@/assets/icon-list.svg" alt=""/>
+      <img class="category-x none" src="@/assets/icon_close.png" alt=""/>
       <a class="logoLink" href="#"><img class="logo" src="@/assets/logo.png" alt=""/></a>
       <div class="mainMenu">
         <div>
@@ -57,6 +58,23 @@
 }
 
 .category{
+  width:40px;
+  height:40px;
+  background-color: #fff;
+  padding:20px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.category.none{
+  display:none;
+}
+
+.category-x.none{
+  display:none;
+}
+
+.category-x{
   width:40px;
   height:40px;
   background-color: #fff;
@@ -210,7 +228,6 @@ onMounted(function(){
   const subscribe=document.querySelector('#subscribe')
   const subscribeBox=document.querySelector('.subscribe-box')
 
-
   lounge.addEventListener('mouseover', function(){
     loungeBox.classList.add('over');
   });
@@ -228,7 +245,6 @@ onMounted(function(){
   })
 
 
-
   event.addEventListener('mouseover', function(){
     eventBox.classList.add('over');
   });
@@ -244,7 +260,6 @@ onMounted(function(){
   eventBox.addEventListener('mouseleave', function(){
     eventBox.classList.remove('over');
   })
-
 
 
   subscribe.addEventListener('mouseover', function(){
@@ -273,7 +288,6 @@ onMounted(function(){
   const cupon=document.querySelector('.event-cupon')
   const backsan=document.querySelector('.subscribe-backsan')
   const normal=document.querySelector('.subscribe-normal')
-
 
   membership.addEventListener('mouseover', function(){
     membership.classList.add('over');
@@ -346,6 +360,20 @@ onMounted(function(){
 
   normal.addEventListener('mouseleave', function(){
     normal.classList.remove('over');
+  })
+
+
+  const category=document.querySelector('.category')
+  const categoryX=document.querySelector('.category-x')
+  
+  category.addEventListener('click', function(){
+    category.classList.add('none');
+    categoryX.classList.remove('none');
+  })
+
+  categoryX.addEventListener('click', function(){
+    categoryX.classList.add('none');
+    category.classList.remove('none');
   })
 })
 </script>
