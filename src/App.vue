@@ -1,5 +1,6 @@
 <template>
   <Header></Header>
+  <CategoryMenu></CategoryMenu>
   <Popup></Popup>
   <SwiperBig></SwiperBig>
   <Character></Character>
@@ -24,6 +25,7 @@ import AI from './components/AI.vue';
 import SwiperSmall from './components/SwiperSmall.vue';
 import Review from './components/Review.vue';
 import Footer from './components/Footer.vue';
+import CategoryMenu from './components/CategoryMenu.vue';
 </script>
 
 <style lang="scss">
