@@ -1,5 +1,5 @@
 <template>
-  <div class="category-menu">
+  <div class="category-menu none">
     <div class="category-menu-detail">
       <div class="detail-wrap">
         <div class="detail-top">
@@ -45,22 +45,22 @@
       <div class="cupon-wrap">
         <a href="#" class="cupon-brother">
           <div class="brother-text">
-            <h3>형제라면<br>선착순 쿠폰 🥡</h3>
+            <h3 class="h3-cupon">형제라면<br>선착순 쿠폰🥡</h3>
             <p>매주 월 오후 10시<br>레시피와함께 공개됩니다!</p>
-            <p>2023-06-14~2023-07-16</p>
+            <p class="cupon-date">2023-06-14~2023-07-16</p>
           </div>
-          <div class="brother-img">
-            <img src="@/assets/cupon1.jpg" alt=""/>
+          <div>
+            <img class="brother-img" src="@/assets/cupon1.jpg" alt=""/>
           </div>
         </a>
         <a href="#" class="cupon-everyday">
           <div class="everyday-text">
-            <h3>매일 출첵하고<br>쿠폰 득템하자!</h3>
+            <h3 class="h3-cupon">매일 출첵하고<br>쿠폰 득템하자!</h3>
             <p>10회 출석하면 1,000원 쿠폰 증정</p>
-            <p>2022-08-30~</p>
+            <p class="cupon-date">2022-08-30~</p>
           </div>
-          <div class="everyday-img">
-            <img src="@/assets/cupon2.jpg" alt=""/>
+          <div>
+            <img class="everyday-img" src="@/assets/cupon2.jpg" alt=""/>
           </div>
         </a>
       </div>
@@ -79,13 +79,23 @@
   width: 100%;
 }
 
+.category-menu.none{
+  display:none;
+}
+
 .detail-wrap{
   display:flex;
   flex-flow:column wrap;
-  padding:70px 0 70px 70px;
+  padding:70px 0 70px 22px;
   width:910px;
   border-right: gray 1px solid;
-  margin-right: 70px;
+}
+
+.cupon-wrap{
+  display:flex;
+  flex-flow:column wrap;
+  padding: 80px 0 80px 60px;
+  gap:30px;
 }
 
 .detail-top{
@@ -141,16 +151,19 @@
 .global-span{
   font-size: 18px;
   padding:6px 0;
+  color:#666;
 }
 
 .soup-span{
   font-size: 18px;
   padding:6px 0;
+  color:#666;
 }
 
 .candy-span{
   font-size: 18px;
   padding:6px 0;
+  color:#666;
 }
 
 
@@ -206,26 +219,31 @@
 .curry-span{
   font-size: 18px;
   padding:6px 0;
+  color:#666;
 }
 
 .drink-span{
   font-size: 18px;
   padding:6px 0;
+  color:#666;
 }
 
 .backsan-span{
   font-size: 18px;
   padding:6px 0;
+  color:#666;
 }
 
 .simple-span{
   font-size: 18px;
   padding:6px 0;
+  color:#666;
 }
 
 .ramen-span{
   font-size: 18px;
   padding:6px 0;
+  color:#666;
 }
 
 .detail-snack{
@@ -243,6 +261,7 @@
 .snack-span{
   font-size: 18px;
   padding:6px 0;
+  color:#666;
 }
 
 .detail-simple{
@@ -295,11 +314,65 @@
 
 .cupon-brother{
   display:flex;
-  flex-flow:row wrap;
+  flex-flow:row nowrap;
+  gap:75px;
+  align-items: center;
 }
 
 .cupon-everyday{
   display:flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  gap:40px;
+  align-items: center;
+}
+
+.brother-img{
+  width:390px;
+  border-radius: 20px;
+}
+
+.everyday-img{
+  width:390px;
+  border-radius: 20px;
+}
+
+.h3-cupon{
+  font-size: 30px;
+}
+
+.brother-text{
+  display:flex;
+  flex-flow:column nowrap;
+  gap:15px;
+}
+
+.everyday-text{
+  display:flex;
+  flex-flow:column nowrap;
+  gap:15px;
+}
+
+.brother-text p{
+  display:flex;
+  flex-flow:column nowrap;
+  color: #666;
+  font-size: 16px;
+}
+
+.everyday-text p{
+  display:flex;
+  flex-flow:column nowrap;
+  color: #666;
+  font-size: 16px;
+}
+
+.cupon-date{
+  padding-left: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #999;
+  background-image: url(@/assets/gnb-banner__date-icon.png);
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 </style>
