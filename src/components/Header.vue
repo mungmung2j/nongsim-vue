@@ -365,15 +365,18 @@ onMounted(function(){
 
   const category=document.querySelector('.category')
   const categoryX=document.querySelector('.category-x')
+  const categoryMenu=document.querySelector('.category-menu')
   
   category.addEventListener('click', function(){
     category.classList.add('none');
     categoryX.classList.remove('none');
+    categoryMenu.classList.remove('none');
   })
 
   categoryX.addEventListener('click', function(){
     categoryX.classList.add('none');
     category.classList.remove('none');
+    categoryMenu.classList.add('none');
   })
 })
 </script>
