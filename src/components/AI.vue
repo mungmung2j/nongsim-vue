@@ -6,14 +6,14 @@
       <div class="AIProduct">
         <div>
           <div class="img">
-            <img class="production production1" src="@/assets/Gun4.png" alt=""/>
+            <img class="production" src="@/assets/Gun4.png" alt=""/>
             <div class="addCart"></div>
           </div>
           <p>깔끔 건면 4종 세트_18입</p><p>19,690원</p>
         </div>
         <div>
           <div class="img">
-            <img class="production production2" src="@/assets/sin.png" alt=""/>
+            <img class="production" src="@/assets/sin.png" alt=""/>
             <div class="addCart"></div>
           </div>
           <p>신라면(120g*5)</p><p>4,400원</p>
