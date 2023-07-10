@@ -61,6 +61,7 @@
       </div>
     </div>
   </div>
+  <category></category>
   <Footer></Footer>
 </template>
 
@@ -271,4 +272,5 @@ a{
 <script setup>
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
+import category from '@/components/CategoryMenu.vue'
 </script>
