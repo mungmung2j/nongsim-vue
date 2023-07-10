@@ -9,7 +9,7 @@
     <div class="headerBody">
       <img class="category" src="@/assets/icon-list.svg" alt=""/>
       <img class="category-x none" src="@/assets/icon_close.png" alt=""/>
-      <a class="logoLink" href="#"><img class="logo" src="@/assets/logo.png" alt=""/></a>
+      <router-link to="/" class="logoLink" href="#"><img class="logo" src="@/assets/logo.png" alt=""/></router-link>
       <div class="mainMenu">
         <div>
           <a class="mainLink" href="#" id="lounge">라운지</a>
@@ -149,7 +149,7 @@
 }
 
 .event-box.over{
-  position:absolute;
+  position:relative;
   z-index:99;
   display:flex;
   flex-flow:column wrap;
