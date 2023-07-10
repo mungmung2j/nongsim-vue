@@ -15,19 +15,6 @@
   <Footer></Footer>
 </template>
 
-<script setup>
-import Header from '@/components/Header.vue';
-import Popup from '@/components/Popup.vue';
-import SwiperBig from '@/components/SwiperBig.vue';
-import Character from '@/components/Character.vue';
-import OnlyNongsim from '@/components/OnlyNongsim.vue';
-import NongGGu from '@/components/NongGGu.vue';
-import AI from '@/components/AI.vue';
-import SwiperSmall from '@/components/SwiperSmall.vue';
-import Review from '@/components/Review.vue';
-import Footer from '@/components/Footer.vue';
-import CategoryMenu from '@/components/CategoryMenu.vue';
-</script>
 
 <style lang="scss">
 *{
@@ -120,3 +107,17 @@ h2{
   margin:140px 100px;
 }
 </style>
+
+<script setup>
+import Header from '@/components/Header.vue';
+import Popup from '@/components/Popup.vue';
+import SwiperBig from '@/components/SwiperBig.vue';
+import Character from '@/components/Character.vue';
+import OnlyNongsim from '@/components/OnlyNongsim.vue';
+import NongGGu from '@/components/NongGGu.vue';
+import AI from '@/components/AI.vue';
+import SwiperSmall from '@/components/SwiperSmall.vue';
+import Review from '@/components/Review.vue';
+import Footer from '@/components/Footer.vue';
+import CategoryMenu from '@/components/CategoryMenu.vue';
+</script>
