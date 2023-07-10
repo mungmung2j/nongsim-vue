@@ -1,8 +1,8 @@
 <template>
   <div class="custom">
-    <img src="@/assets/custom_img1.png" alt=""/>
-    <img src="@/assets/custom_img2.png" alt=""/>
-    <img src="@/assets/custom_img3.png" alt=""/>
+    <img src="@/assets/custom_img1.jpg" alt=""/>
+    <img src="@/assets/custom_img2.jpg" alt=""/>
+    <img src="@/assets/custom_img3.jpg" alt=""/>
     <div>
       <h3>커스텀</h3>
       <div>

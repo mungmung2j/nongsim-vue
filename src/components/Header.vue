@@ -13,7 +13,7 @@
       <div class="mainMenu">
         <div>
           <a class="mainLink" href="#" id="lounge">라운지</a>
-          <a class="mainLink" href="#">커스텀<span class="new">N</span></a>
+          <router-link to="/Custom" class="mainLink" >커스텀<span class="new">N</span></router-link>
           <a class="mainLink" href="#">스페셜</a>
           <a class="mainLink" href="#" id="event">기획전/이벤트</a>
           <a class="mainLink" href="#" id="subscribe">정기구독</a>
@@ -25,7 +25,7 @@
     </div>
     <div class="speech-bubble">
         <div class="lounge-box">
-          <a class="lounge-membership" href="#">멤버십</a><a class="lounge-survey" href="#">고객 서베이</a><a class="lounge-poodle" href="#">누들푸들</a><a class="lounge-experience" href="#">체험단 리뷰</a>
+          <router-link to="/Membership" class="lounge-membership" >멤버십</router-link><a class="lounge-survey" href="#">고객 서베이</a><a class="lounge-poodle" href="#">누들푸들</a><a class="lounge-experience" href="#">체험단 리뷰</a>
         </div>
         <div class="event-box">
           <a class="event-exhibition" href="#">기획전</a><a class="event-event" href="#">이벤트</a><a class="event-cupon" href="#">쿠폰/상품권</a>
@@ -219,6 +219,7 @@
 
 <script setup>
 import {onMounted} from 'vue';
+import { RouterLink } from 'vue-router';
 
 onMounted(function(){
   const lounge=document.querySelector('#lounge')
