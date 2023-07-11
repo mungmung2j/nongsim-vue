@@ -149,7 +149,7 @@
 }
 
 .event-box.over{
-  position:relative;
+  position:absolute;
   z-index:99;
   display:flex;
   flex-flow:column wrap;
