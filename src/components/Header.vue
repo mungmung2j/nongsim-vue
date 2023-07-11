@@ -14,7 +14,7 @@
         <div>
           <a class="mainLink" href="#" id="lounge">라운지</a>
           <router-link to="/Custom" class="mainLink" >커스텀<span class="new">N</span></router-link>
-          <a class="mainLink" href="#">스페셜</a>
+          <router-link to="/Special" class="mainLink" href="#">스페셜</router-link>
           <a class="mainLink" href="#" id="event">기획전/이벤트</a>
           <a class="mainLink" href="#" id="subscribe">정기구독</a>
         </div>
