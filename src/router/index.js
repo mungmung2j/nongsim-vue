@@ -14,7 +14,7 @@ const routes = [
     {
       path: "/Custom", // [경로]
       name: "Custom", // [이름]
-      component: () => import('@/components/Custom.vue') // [로드 파일]
+      component: () => import('@/view/Custom.vue') // [로드 파일]
     }
 ];
 
