@@ -20,7 +20,17 @@ const routes = [
       path: "/Special", // [경로]
       name: "Special", // [이름]
       component: () => import('@/view/Special.vue') // [로드 파일]
-    }
+    },
+    {
+      path: "/Plan", // [경로]
+      name: "Plan", // [이름]
+      component: () => import('@/view/Plan.vue') // [로드 파일]
+    },
+    {
+      path: "/Backsan", // [경로]
+      name: "Backsan", // [이름]
+      component: () => import('@/view/Backsan.vue') // [로드 파일]
+    },
 ];
 
 // 라우터 생성
