@@ -11,33 +11,57 @@
       <img class="category-x none" src="@/assets/icon_close.png" alt=""/>
       <router-link to="/" class="logoLink" href="#"><img class="logo" src="@/assets/logo.png" alt=""/></router-link>
       <div class="mainMenu">
-        <div>
-          <a class="mainLink" href="#" id="lounge">라운지</a>
-          <router-link to="/Custom" class="mainLink" >커스텀<span class="new">N</span></router-link>
-          <router-link to="/Special" class="mainLink" href="#">스페셜</router-link>
-          <a class="mainLink" href="#" id="event">기획전/이벤트</a>
-          <a class="mainLink" href="#" id="subscribe">정기구독</a>
-        </div>
+        <ul class="mainMenu-ul">
+          <li>
+            <a class="mainLink" href="#" id="lounge">라운지</a>
+            <li>
+              <div class="lounge-box">
+                <router-link to="/Membership" class="lounge-membership">멤버십</router-link><router-link to="/Membership" class="lounge-survey">고객 서베이</router-link><router-link to="/Membership" class="lounge-poodle">누들푸들</router-link><router-link to="/Membership" class="lounge-experience">체험단 리뷰</router-link>
+              </div>
+            </li>
+          </li>
+          <li><router-link to="/Custom" class="mainLink" >커스텀<span class="new">N</span></router-link></li>
+          <li><router-link to="/Special" class="mainLink">스페셜</router-link></li>
+          <li>
+            <a class="mainLink" href="#" id="event">기획전/이벤트</a>
+            <li>
+              <div class="event-box">
+                <router-link to="/Plan" class="event-exhibition">기획전</router-link><a class="event-event" href="#">이벤트</a><a class="event-cupon" href="#">쿠폰/상품권</a>
+              </div>
+            </li>
+          </li>
+          <li>
+            <a class="mainLink" href="#" id="subscribe">정기구독</a>
+            <li>
+              <div class="subscribe-box">
+                <router-link to="/Backsan" class="subscribe-backsan">백산수</router-link><a class="subscribe-normal" href="#">일반제품</a>
+              </div>
+            </li>
+          </li>
+        </ul>
         <div class="mainIcons">
           <a href="#"><img class="mainIcon" src="@/assets/lens.svg" alt="lens"/></a><a href="#"><img class="mainIcon" src="@/assets/person.svg" alt="person"/></a><a href="#"><img class="mainIcon" src="@/assets/cart.svg" alt="cart"/></a>
         </div>
       </div>
     </div>
-    <div class="speech-bubble">
-        <div class="lounge-box">
-          <router-link to="/Membership" class="lounge-membership" >멤버십</router-link><a class="lounge-survey" href="#">고객 서베이</a><a class="lounge-poodle" href="#">누들푸들</a><a class="lounge-experience" href="#">체험단 리뷰</a>
-        </div>
-        <div class="event-box">
-          <a class="event-exhibition" href="#">기획전</a><a class="event-event" href="#">이벤트</a><a class="event-cupon" href="#">쿠폰/상품권</a>
-        </div>
-        <div class="subscribe-box">
-          <a class="subscribe-backsan" href="#">백산수</a><a class="subscribe-normal" href="#">일반제품</a>
-        </div>
-      </div>
   </header>
 </template>
 
 <style>
+*{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration-line: none;
+  color:inherit;
+}
+
+header{
+  width:100%;
+}
+
 .miniMenu{
   display:flex;
   flex-flow:row nowrap;
@@ -55,6 +79,7 @@
   display: flex;
   flex-flow:row nowrap;
   align-items: center;
+  height: 80px;
 }
 
 .category{
@@ -99,6 +124,14 @@
   width: 100%;
 }
 
+.mainMenu-ul{
+  display:block;
+}
+
+.mainMenu-ul li{
+  float: left;
+}
+
 .mainLink{
   padding:20px;
   font-size: 18px;
@@ -135,13 +168,15 @@
   z-index:99;
   display:flex;
   flex-flow:column wrap;
-  left:18%;
-  top:12.5%;
+  margin:40px 70px 0 -30px;
   background-color: #fff;
   padding:40px;
   gap:10px;
   box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.1);
   border-radius: 20px;
+  color:#666;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .event-box{
@@ -153,13 +188,15 @@
   z-index:99;
   display:flex;
   flex-flow:column wrap;
-  left:36%;
-  top:12.5%;
+  margin:40px 70px 0 0px;
   background-color: #fff;
   padding:40px;
   gap:10px;
   box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.1);
   border-radius: 20px;
+  color:#666;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .subscribe-box{
@@ -171,13 +208,15 @@
   z-index:99;
   display:flex;
   flex-flow:column wrap;
-  left:44.5%;
-  top:12.5%;
+  margin:40px 70px 0 -20px;
   background-color: #fff;
   padding:40px;
   gap:10px;
   box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.1);
   border-radius: 20px;
+  color:#666;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .lounge-membership.over{
