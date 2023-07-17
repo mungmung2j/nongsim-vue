@@ -65,7 +65,7 @@
         </div>
       </div>
     <div class="special-private">
-      <h3>전용제품</h3>
+      <h3 class="private-h3">전용제품</h3>
       <div class="only">
         <div>
           <div class="img">
@@ -199,6 +199,10 @@ h2{
   padding-bottom: 30px;
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 40px;
+}
+
+.private-h3{
+  margin-top: 100px;
 }
 
 .special-black{
