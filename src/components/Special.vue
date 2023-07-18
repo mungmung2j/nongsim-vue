@@ -233,6 +233,16 @@ h2{
   gap:80px 20px;
   width: auto;
 }
+
+.production{
+  width: 100%;
+  border-radius: 12px;
+  background-color: #fff
+}
+
+.production.over{
+  border:1px solid #c7002e;
+}
 </style>
 
 <script setup>

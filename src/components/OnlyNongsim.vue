@@ -222,6 +222,10 @@
 .shrimp.none{
   display:none;
 }
+
+.production.over{
+  border:1px solid #c7002e;
+}
 </style>
 
 <script setup>

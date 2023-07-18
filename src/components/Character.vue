@@ -14,9 +14,6 @@
   background: url(@/assets/character2.png);
 }
 
-.production.over{
-  border:1px solid #c7002e;
-}
 </style>
 
 <script setup>
