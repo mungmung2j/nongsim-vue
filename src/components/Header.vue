@@ -26,7 +26,7 @@
             <a class="mainLink" href="#" id="event">기획전/이벤트</a>
             <li>
               <div class="event-box">
-                <router-link to="/Plan" class="event-exhibition">기획전</router-link><a class="event-event" href="#">이벤트</a><a class="event-cupon" href="#">쿠폰/상품권</a>
+                <router-link to="/Plan" class="event-exhibition">기획전</router-link><router-link to="/Plan" class="event-event">이벤트</router-link><router-link to="/Plan" class="event-cupon">쿠폰/상품권</router-link>
               </div>
             </li>
           </li>
@@ -34,7 +34,7 @@
             <a class="mainLink" href="#" id="subscribe">정기구독</a>
             <li>
               <div class="subscribe-box">
-                <router-link to="/Backsan" class="subscribe-backsan">백산수</router-link><a class="subscribe-normal" href="#">일반제품</a>
+                <router-link to="/Backsan" class="subscribe-backsan">백산수</router-link><router-link to="/Backsan" class="subscribe-normal">일반제품</router-link>
               </div>
             </li>
           </li>
