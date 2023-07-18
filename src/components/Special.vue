@@ -156,7 +156,6 @@ h2{
   font-size:50px;
   line-height: 1;
   margin-bottom:25px;
-  margin-top:60px;
 }
 
 .img{
