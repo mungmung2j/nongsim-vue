@@ -2,12 +2,12 @@
   <div class="special">
     <img class="special-banner" src="@/assets/special-banner.png" alt=""/>
     <div class="special-link-wrap">
-      <a class="special-link" href="#">기획세트&emsp;&emsp;∨</a>
-      <a class="special-link" href="#">전용제품&emsp;&emsp;∨</a>
+      <a class="special-link" href="#planset">기획세트&emsp;&emsp;∨</a>
+      <a class="special-link" href="#private-h3">전용제품&emsp;&emsp;∨</a>
     </div>
-    <div class="special-plan">
+    <div>
       <div class="mainProduct">
-      <h3>기획세트</h3>
+      <h3 id="planset">기획세트</h3>
       <div class="only">
         <div>
           <div class="img">
@@ -65,7 +65,7 @@
         </div>
       </div>
     <div class="special-private">
-      <h3 class="private-h3">전용제품</h3>
+      <h3 id="private-h3">전용제품</h3>
       <div class="only">
         <div>
           <div class="img">
