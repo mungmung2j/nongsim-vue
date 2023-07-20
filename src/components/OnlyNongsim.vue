@@ -156,7 +156,7 @@
 .production{
   width: 100%;
   border-radius: 12px;
-  background-color: #fff
+  background-color: rgb(247, 246, 246);
 }
 
 .img{

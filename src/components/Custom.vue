@@ -31,7 +31,7 @@
         </div>
         <div class="custom-chicken">
           <div class="img">
-            <img class="production" src="@/assets/chicken.png" alt=""/>
+            <img class="img-chicken" src="@/assets/chicken.png" alt=""/>
           </div>
           <div class="custom-text">
             <p class="custom-production-title">[에디터를 통하지 않고 주문하시면 취소됩니다]<br>농꾸 닭다리 선물상자(66g*6)</p>
@@ -108,14 +108,23 @@ a{
 
 .custom-product{
   display:flex;
+  gap:20px;
+}
 
+.img-chicken{
+  width: 300px;
+  background-color:rgb(247, 246, 246); 
+  border-radius: 12px;
 }
 
 .production{
   width: 335px;
+  height: auto;
   border-radius: 12px;
-  background-color: #fff
+  background-color: rgb(247, 246, 246);
+  background-image: url();
 }
+
 
 .custom-production-title{
   font-size:18px;
@@ -218,5 +227,3 @@ a{
 }
 </style>
 
-<script setup>
-</script>
