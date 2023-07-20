@@ -14,7 +14,7 @@
         <div class="premium">
           <span>유료 멤버십</span>
         </div>
-        <div class="normal">
+        <div class="normal none">
           <span>일반 회원</span>
         </div>
       </div>
@@ -57,6 +57,57 @@
         <a href="#" class="membership-together">
           귀하심 회원(유료 멤버십) 함께 하실래요?
         </a>
+      </div>
+      <div class="normal-benefit none">
+        <div>Nongshim Membership</div>
+        <h2>농심몰 회원 혜택</h2>
+        <div>농심몰 회원에게만 제공해드리는 특별한 혜택입니다</div>
+        <div>
+          <div>
+            <div>신규가입혜택쿠폰</div>
+            <div>
+              <div>
+                <img src="@/assets/membership_tab2_icon1-1.png"/>
+                <p>신규회원가입</p>
+                <p>2,000원</p>
+              </div>
+              <div>
+                <img src="@/assets/membership_tab2_icon1-2.png"/>
+                <p>생일기념</p>
+                <p>2,000원</p>
+              </div>
+              <div>
+                <img src="@/assets/membership_tab2_icon1-3.png"/>
+                <p>추가정보입력</p>
+                <p>1,000원</p>
+              </div>
+              <div>
+                <img src="@/assets/membership_tab2_icon1-4.png"/>
+                <p>나만의 기념일</p>
+                <p>농꾸 2,000원</p>
+              </div>
+            </div>
+          </div>
+          <div>공통혜택쿠폰</div>
+          <div>
+            <div>
+              <img src="@/assets/membership_tab2_icon2-1.png"/>
+              <p>텍스트</p>
+              <p>50원</p>
+            </div>
+            <div>
+              <img src="@/assets/membership_tab2_icon2-2.png"/>
+              <p>나만의 기념일</p>
+              <p>200원</p>
+            </div>
+            <div>
+              <img src="@/assets/membership_tab2_icon2-3.png"/>
+              <p>나만의 기념일</p>
+              <p>5%</p>
+            </div>
+          </div>
+        </div>
+        <a href="#">회원가입하고 혜택받기</a>
       </div>
     </div>
   </div>
@@ -132,6 +183,28 @@ a{
   align-items: center;
   border-bottom: 3px solid #c7002e;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.premium.none{
+  width:700px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-weight: 500;
+}
+
+.normal.none{
+  width:700px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border:none;
+  font-weight: 500;
 }
 
 .normal{
@@ -140,12 +213,23 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 3px solid #c7002e;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .premium-benefit{
   padding:150px 100px;
   text-align: center;
   background-color: #fafafa;
+}
+
+.premium-benefit.none{
+  display:none;
+}
+
+.normal-benefit.none{
+  display:none;
 }
 
 .membership-special-benefit{
@@ -265,3 +349,27 @@ a{
   align-items: center;
 }
 </style>
+
+<script setup>
+import { onMounted } from 'vue';
+
+onMounted(function(){
+  const premium=document.querySelector('.premium');
+  const normal=document.querySelector('.normal');
+  const prefit=document.querySelector('.premium-benefit');
+  const norfit=document.querySelector('.normal-benefit');
+
+  normal.addEventListener('click', function(){
+    premium.classList.add('none');
+    normal.classList.remove('none');
+    prefit.classList.add('none');
+    norfit.classList.remove('none');
+  })
+  premium.addEventListener('click', function(){
+    premium.classList.remove('none');
+    normal.classList.add('none');
+    prefit.classList.remove('none');
+    norfit.classList.add('none');
+  })
+})
+</script>
