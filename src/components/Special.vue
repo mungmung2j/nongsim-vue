@@ -200,7 +200,7 @@ h2{
   margin-bottom: 40px;
 }
 
-#private-h3{
+.private-h3{
   margin-top: 100px;
 }
 
