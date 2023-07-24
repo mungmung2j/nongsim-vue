@@ -254,6 +254,13 @@ header{
 .subscribe-normal.over{
   color:#c7000e;
 }
+
+.headerBody.fixed{
+  position:fixed;
+  top:0;
+  width: 100%;
+  z-index: 999;
+}
 </style>
 
 <script setup>
@@ -417,6 +424,17 @@ onMounted(function(){
     categoryX.classList.add('none');
     category.classList.remove('none');
     categoryMenu.classList.add('none');
+  })
+
+  const header=document.querySelector('.headerBody');
+  const headerTop=header.getBoundingClientRect().top+window.scrollY;
+
+  window.addEventListener('scroll',function(){
+    if(this.window.scrollY>=headerTop){
+      header.classList.add('fixed');
+    }else{
+      header.classList.remove('fixed');
+    }
   })
 })
 </script>
