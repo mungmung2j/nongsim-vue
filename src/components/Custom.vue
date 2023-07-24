@@ -20,7 +20,7 @@
       <div class="custom-product">
         <div class="custom-nuguri">
           <div class="img">
-            <img class="production" src="@/assets/nuguri.png" alt=""/>
+            <img class="img-nuguri" src="@/assets/nuguri.png" alt=""/>
             <div class="nextsee"></div>
           </div>
           <div class="custom-text">
@@ -112,17 +112,17 @@ a{
 }
 
 .img-chicken{
-  width: 300px;
+  width: 335px;
+  height: auto;
   background-color:rgb(247, 246, 246); 
   border-radius: 12px;
 }
 
-.production{
+.img-nuguri{
   width: 335px;
   height: auto;
   border-radius: 12px;
   background-color: rgb(247, 246, 246);
-  background-image: url();
 }
 
 
