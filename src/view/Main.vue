@@ -17,11 +17,7 @@
 
 
 <style lang="scss">
-*{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
 a{
   text-decoration-line: none;
   color:inherit;
@@ -34,7 +30,7 @@ h2{
 }
 
 /* button css */
-.plan{
+.planbtn{
   color:#999;
   font-size:16px;
   background: none;
@@ -46,7 +42,7 @@ h2{
   cursor: pointer;
 }
 
-.plan.red{
+.planbtn.red{
   color:white;
   font-size:16px;
   background: #c7002e;

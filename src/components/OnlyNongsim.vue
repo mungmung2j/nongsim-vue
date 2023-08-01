@@ -4,7 +4,7 @@
     <h2>오직 농심몰에서만!</h2>
       <div class="viewProduct"><p>농심몰 전용 제품 구경하고 가세요</p>
         <div>
-          <button class="plan">기획세트</button><button class="goods">굿즈세트</button>
+          <button class="planbtn">기획세트</button><button class="goods">굿즈세트</button>
         </div>
       </div>
       <div class="only">
@@ -248,7 +248,7 @@ for (let i=0; i<border.length; i++){
   })
 }
 
-const plan=document.querySelector('.plan')
+const planbtn=document.querySelector('.planbtn')
 const goods=document.querySelector('.goods')
 const honeynoodle=document.querySelector('.honeynoodle')
 const gun=document.querySelector('.gun')
@@ -263,8 +263,8 @@ const cook=document.querySelector('.cook');
 const noodlefit=document.querySelector('.noodlefit');
 const shrimp=document.querySelector('.shrimp');
 
-plan.addEventListener('click', function(){
-  plan.classList.add('red');
+planbtn.addEventListener('click', function(){
+  planbtn.classList.add('red');
   goods.classList.add('white');
   honeynoodle.classList.add('none');
   gun.classList.add('none');
@@ -281,7 +281,7 @@ plan.addEventListener('click', function(){
 })
 
 goods.addEventListener('click', function(){
-  plan.classList.remove('red');
+  planbtn.classList.remove('red');
   goods.classList.remove('white');
   honeynoodle.classList.remove('none');
   gun.classList.remove('none');
