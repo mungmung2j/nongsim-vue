@@ -31,6 +31,12 @@ const routes = [
       name: "Backsan", // [이름]
       component: () => import('@/view/Backsan.vue') // [로드 파일]
     },
+
+    {
+      path: "/Login", // [경로]
+      name: "Login", // [이름]
+      component: () => import('@/view/Login.vue') // [로드 파일]
+    },
 ];
 
 // 라우터 생성
