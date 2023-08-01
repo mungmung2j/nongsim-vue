@@ -71,9 +71,7 @@
 <style>
 .category-menu{
   display:flex;
-  position: absolute;
-  top: 122px;
-  bottom: auto;
+  position: fixed;
   background: #fff;
   z-index: 99;
   width: 100%;
