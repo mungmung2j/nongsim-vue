@@ -19,10 +19,11 @@
       </div>
       <div class="custom-product">
         <div class="custom-nuguri">
-          <div class="img">
+          <div class="custom-img">
             <img class="img-nuguri" src="@/assets/nuguri.png" alt=""/>
-            <div class="nextsee"></div>
+            <span class="nextsee"></span>
           </div>
+
           <div class="custom-text">
             <p class="custom-production-title">농꾸 너구리컵 선물상자(62*6g)</p>
             <p class="custom-next">다음신청기간에 만나요</p>
@@ -30,8 +31,9 @@
           </div>
         </div>
         <div class="custom-chicken">
-          <div class="img">
+          <div class="custom-img">
             <img class="img-chicken" src="@/assets/chicken.png" alt=""/>
+            <span class="nextsee"></span>
           </div>
           <div class="custom-text">
             <p class="custom-production-title">[에디터를 통하지 않고 주문하시면 취소됩니다]<br>농꾸 닭다리 선물상자(66g*6)</p>
@@ -112,17 +114,13 @@ a{
 }
 
 .img-chicken{
-  width: 335px;
-  height: auto;
-  background-color:rgb(247, 246, 246); 
-  border-radius: 12px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .img-nuguri{
-  width: 335px;
-  height: auto;
-  border-radius: 12px;
-  background-color: rgb(247, 246, 246);
+  max-width: 100%;
+  max-height: 100%;
 }
 
 
@@ -224,6 +222,29 @@ a{
   margin:0px 5px;
   justify-content: center;
   align-items: center;  
+}
+
+.custom-img{
+  background-color: #fafafa;
+  width: 335px;
+  height: 335px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.nextsee{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #0008;
+  background-image: url(@/assets/prd-icon--soldout.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: inherit;
 }
 </style>
 
