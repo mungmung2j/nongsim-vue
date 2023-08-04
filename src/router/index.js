@@ -37,6 +37,12 @@ const routes = [
       name: "Login", // [이름]
       component: () => import('@/view/Login.vue') // [로드 파일]
     },
+
+    {
+      path: "/Register", // [경로]
+      name: "Register", // [이름]
+      component: () => import('@/view/Register.vue') // [로드 파일]
+    }
 ];
 
 // 라우터 생성

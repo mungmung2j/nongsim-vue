@@ -2,7 +2,7 @@
   <header>
     <ul class="miniMenu">
       <router-link to="/Login">로그인</router-link>
-      <li><a href="#">회원가입</a></li>
+      <router-link to="/Register">회원가입</router-link>
       <li><a href="#">주문조회</a></li>
       <li><a href="#">고객만족센터</a></li>
     </ul>
