@@ -150,7 +150,6 @@ input[type="checkbox"]{
   height: 20px;
   margin-right: 8px;
   cursor: pointer;
-  -webkit-appearance: none;
   background: none;
   background-image: url(@/assets/input_check2.png);
   background-repeat: no-repeat;
